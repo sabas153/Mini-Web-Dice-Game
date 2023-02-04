@@ -2,13 +2,17 @@
     font-family:"ThaleahFat";
     src: url("../data/ThaleahFat.ttf") format("truetype");
   }
-body{
+main{
     background-image:url(../img/background.jpg);
     background-repeat: no-repeat;
-    background-size: 112%;
+    background-size: cover;
+    max-width: 100%;
+    width: 90%;
     font:inherit;
     font-family: ThaleahFat;
     font-size:xx-large;
+    border: 5px solid black;
+    margin: auto;
 }
 .flex{
     display: flex;
@@ -19,14 +23,14 @@ body{
 }
 #vidaSlime{
     margin-left: 30%;
+    position: relative;
 }
 #stats{
     margin-left: 15%;
     color: rgb(136, 0, 0);
     position: absolute;
-    right: 35%;
     opacity: 0;
-    top: 55%;
+    top: -10%;
 }
 #vida{
     position: absolute;
@@ -48,6 +52,7 @@ body{
 }
 #slime{
     width: 40%;
+    height: 50%;
 }
 #dado{
     width: 10%;
